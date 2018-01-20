@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+ini_set('display_errors', false);
+if (file_exists(__DIR__.'/../../autoload.php')) {
+    require __DIR__.'/../../autoload.php';
+} else {
+    require __DIR__.'/vendor/autoload.php';
+}
+$app = new Symfony\Component\Console\Application('Harmony Installer', '1.0.0');
+$app->add(new Harmony\Installer\Console\NewCommand);
+$app->run();

@@ -1,0 +1,28 @@
+{
+    "name": "harmony-betta/installer",
+    "type": "composer-plugin",
+    "description": "Harmony Betta application installer.",
+    "keywords": ["Harmony Betta"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imam Ali Mustofa",
+            "email": "bettadevindonesia@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Harmony\\Installer\\Console\\": "src/"
+        }
+    },
+    "require": {
+        "ext-zip": "*",
+        "guzzlehttp/guzzle": "~4.0|~5.0|~6.0",
+        "symfony/console": "~3.0|~4.0",
+        "symfony/filesystem": "~3.0|~4.0",
+        "symfony/process": "~3.0|~4.0"
+    },
+    "bin": [
+        "harmony"
+    ]
+}

@@ -1,6 +1,5 @@
 {
     "name": "harmony-betta/installer",
-    "type": "composer-plugin",
     "description": "Harmony Betta application installer.",
     "keywords": ["Harmony Betta"],
     "license": "MIT",

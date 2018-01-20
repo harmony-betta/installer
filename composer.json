@@ -21,6 +21,9 @@
         "symfony/filesystem": "~3.0|~4.0",
         "symfony/process": "~3.0|~4.0"
     },
+    "extra": {
+        "class": "Harmony\\Installer\\Console\\NewCommand"
+    },
     "bin": [
         "harmony"
     ]

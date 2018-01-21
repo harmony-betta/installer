@@ -155,7 +155,7 @@ class NewCommand extends Command
                 //if ($file=="index.php") continue; for example if you have index.php in the folder
                 if (rename($dir.'/'.$file,$dirNew.'/'.$file))
                     {
-                    echo " Files Copyed Successfully ";
+                    echo " Files move to Project Successfully ";
                     echo ": $dirNew/$file \n"; 
                     //if files you are moving are images you can print it from 
                     //new folder to be sure they are there 

@@ -100,7 +100,7 @@ class NewCommand extends Command
     {
         switch ($version) {
             case 'develop':
-                $filename = 'latest-develop.zip';
+                $filename = 'dev-master.zip';
                 break;
             case 'master':
                 $filename = 'master.zip';
@@ -167,24 +167,6 @@ class NewCommand extends Command
         }
         return $this;
     }
-    // /**
-    //  * Make sure the storage and bootstrap cache directories are writable.
-    //  *
-    //  * @param  string  $appDirectory
-    //  * @param  \Symfony\Component\Console\Output\OutputInterface  $output
-    //  * @return $this
-    //  */
-    // protected function prepareWritableDirectories($appDirectory, OutputInterface $output)
-    // {
-    //     $filesystem = new Filesystem;
-    //     try {
-    //         $filesystem->chmod($appDirectory.DIRECTORY_SEPARATOR."bootstrap/cache", 0755, 0000, true);
-    //         $filesystem->chmod($appDirectory.DIRECTORY_SEPARATOR."storage", 0755, 0000, true);
-    //     } catch (IOExceptionInterface $e) {
-    //         $output->writeln('<comment>You should verify that the "storage" and "bootstrap/cache" directories are writable.</comment>');
-    //     }
-    //     return $this;
-    // }
     /**
      * Get the version that should be downloaded.
      *

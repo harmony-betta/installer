@@ -1,7 +1,7 @@
 {
     "name": "harmony-betta/installer",
     "description": "Harmony Betta application installer.",
-    "keywords": ["Harmony Betta"],
+    "keywords": ["Harmony Betta", "Installer", "Framework Installer"],
     "license": "MIT",
     "authors": [
         {
@@ -18,6 +18,7 @@
         "class": "Harmony\\Installer\\Console\\NewCommand"
     },
     "require": {
+        "php": "^5.5.9|>=7.0.8",
         "ext-zip": "*",
         "guzzlehttp/guzzle": "~4.0|~5.0|~6.0",
         "symfony/console": "~3.0|~4.0",

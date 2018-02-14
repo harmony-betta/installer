@@ -49,6 +49,7 @@ class NewCommand extends Command
              ->extract($zipFile, $directory)
              ->cleanUp($zipFile)
              ->move($directory);
+        @rmdir('harmony-master');
         $composer = $this->findComposer();
         $commands = [
             $composer.' install --no-scripts',

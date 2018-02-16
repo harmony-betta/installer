@@ -53,7 +53,8 @@ class NewCommand extends Command
         $composer = $this->findComposer();
         $commands = [
             $composer.' install --no-scripts',
-            $composer.' run-script post-root-package-install'
+            $composer.' run-script post-root-package-install',
+            $composer.' run-script removeMaster'
         ];
         if ($input->getOption('no-ansi')) {
             $commands = array_map(function ($value) {
